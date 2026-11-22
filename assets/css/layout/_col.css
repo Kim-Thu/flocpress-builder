@@ -1,0 +1,4 @@
+.l-col {
+  flex: 1 1 var(--l-col-basis, 100%);
+  min-width: 0;
+}

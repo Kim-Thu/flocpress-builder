@@ -1,0 +1,29 @@
+.c-button__link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  border: 1px solid transparent;
+  border-radius: var(--c-button-radius, var(--radius-medium));
+  background: var(--c-button-background, var(--color-primary));
+  color: var(--c-button-color, var(--color-surface));
+  text-decoration: none;
+  transition: opacity var(--duration-fast) ease;
+}
+
+.c-button__link:hover { opacity: 0.88; }
+
+.c-button--size-small  .c-button__link { padding: 8px 14px;  font-size: var(--font-size-small); }
+.c-button--size-medium .c-button__link { padding: 12px 24px; font-size: var(--font-size-medium); }
+.c-button--size-large  .c-button__link { padding: 16px 32px; font-size: var(--font-size-large); }
+
+.c-button--outline .c-button__link {
+  background: transparent;
+  border-color: var(--c-button-background, var(--color-primary));
+  color: var(--c-button-background, var(--color-primary));
+}
+
+.c-button--ghost .c-button__link {
+  background: transparent;
+  color: var(--c-button-background, var(--color-primary));
+}
